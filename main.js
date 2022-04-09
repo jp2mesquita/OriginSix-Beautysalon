@@ -32,6 +32,7 @@ function changeHeaderWhenScroll() {
 /* TESTIMONIALS CAROUSEL SLIDER SWIPER */
 const swiper = new Swiper('.swiper-container', {
   sliderPerView: 1,
+
   spaceBetween: 10,
   pagination: {
     el: '.swiper-pagination'
@@ -82,7 +83,7 @@ function backToTop() {
 /* VISIBLE MENU ON SCREEN */
 const sections = document.querySelectorAll('section[id]')
 function actvateMenuAtCurrentSection() {
-  const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
+  const checkpoint = window.pageYOffset + window.innerHeight / 2
 
   for (const section of sections) {
     const sectionTop = section.offsetTop
